@@ -7,7 +7,7 @@ import com.amazon.device.iap.model.*
 
 internal class AmazonBillingListener(private val amazonBillingService: BillingService) : PurchasingListener {
 
-    var mDebugLog = false
+    var mDebugLog = true
 
     override fun onUserDataResponse(userDataResponse: UserDataResponse) {
         logDebug("onUserDataResponse " + userDataResponse.requestStatus)
@@ -106,6 +106,5 @@ internal class AmazonBillingListener(private val amazonBillingService: BillingSe
     }
 
     init {
-        logDebug("IS_SANDBOX_MODE:" + PurchasingService.IS_SANDBOX_MODE)
     }
 }

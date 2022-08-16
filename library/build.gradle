@@ -6,7 +6,7 @@ plugins {
     id 'kotlin-android-extensions'
 }
 
-group = 'com.github.eggheadgames'
+group = 'com.github.hungpv19'
 
 repositories {
     mavenCentral()
@@ -46,7 +46,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    amazonApi files('libs/in-app-purchasing-2.0.76.jar')
+    amazonApi files('libs/amazon-appstore-sdk-3.0.3.jar')
 
     googleApi 'com.android.billingclient:billing:3.0.0'
 
